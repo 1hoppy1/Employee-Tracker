@@ -4,6 +4,9 @@ const connection = require("./db/database")
 require("console.table")
 
 connection.connect(function (err) {
+  if (err) {
+    console.log(err)
+  }
   console.log("connection id", connection.threadId)
   mainMenu()
 })
@@ -75,26 +78,23 @@ function updateEmployeeRole() {
   )
 
   function updateRole() {
-    console.log("hi jim")
 
     inquirer.prompt([{
         type: "number",
-        message: "Enter Employee ID number.",
+        message: "Enter Employee ID Number.",
         name: "updateRole1"
       },
       {
         type: "input",
-        message: "Enter Employees new Role.",
+        message: "Enter Employees new Role Number.",
         name: "updateRole2",
 
       }
 
     ]).then(function (userInput) {
       connection.query(`UPDATE employee SET role_id = ${userInput.updateRole2} WHERE id = ${userInput.updateRole1}`)
-
+      mainMenu()
     })
-
-
   }
 }
 
@@ -134,22 +134,22 @@ function addRole() {
 function addEmployee() {
   inquirer.prompt([{
       type: "input",
-      message: "What is your first name?",
+      message: "First Name?",
       name: "firstName"
     },
     {
       type: "input",
-      message: "What is your last name?",
+      message: "Last Name?",
       name: "lastName"
     },
     {
       type: "number",
-      message: "What is your role id number?",
+      message: "New employee role id number?",
       name: "roleID"
     },
     {
       type: "input",
-      message: "What is your managers ID?",
+      message: "New employee managers ID?",
       name: "managerID"
     }
   ]).then(function (userInput) {
