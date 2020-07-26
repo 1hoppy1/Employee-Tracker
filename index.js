@@ -62,11 +62,17 @@ function viewRoles() {
 
 function viewEmployee() {
   var statement = connection.query("SELECT * FROM employee",
+
     function (err, data) {
       console.table(data)
       mainMenu()
     }
   )
+  // Can't figure out how to make it work... :(
+  // `SELECT employee.id id, employee.first_name firstName,
+  // employee.last_name lastName, roles.title, CONCAT(employee2.first_name, " ", employee2.last_name) 
+  // manager FROM employee LEFT JOIN employee employee2 ON employee.manager_id = employee2.id
+  // LEFT JOIN roles ON employee.role_id = roles.id;`
 }
 
 function updateEmployeeRole() {

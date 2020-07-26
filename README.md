@@ -6,12 +6,20 @@ This CLI application will allow you to view and manage the departments, roles, a
 
 Description Video Link:
 
+Video 1:
+https://drive.google.com/file/d/1sz8vydeyAGp2k5Zj5_e0YK4HdaxyPk9w/view
 
+Video 2:
+https://drive.google.com/file/d/1U27KCdhshwGTtYRXVFL1v-LDKrBMioQe/view
 
 
 Images:
 
+Snip One
+<img src="./images/img1.png" />
 
+Snip Two
+<img src="./images/img2.png" />
 
 ## Table of Contents
 
