@@ -16,10 +16,11 @@ https://drive.google.com/file/d/1U27KCdhshwGTtYRXVFL1v-LDKrBMioQe/view
 Images:
 
 Snip One
-<img src="./images/img1.png" />
+![Generator with no passord](./images/img1.png)
+
 
 Snip Two
-<img src="./images/img2.png" />
+![Generator with no passord](./images/img2.png)
 
 ## Table of Contents
 
