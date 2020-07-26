@@ -1,0 +1,30 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "This CLI application will allow you to view and manage the departments, roles, and employees in your company.",
+  "main": "server.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "inquirer-autocomplete-prompt": "^1.0.2",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1hoppy1/Employee-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1hoppy1/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/1hoppy1/Employee-Tracker#readme",
+  "keywords": []
+}

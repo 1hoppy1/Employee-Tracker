@@ -4,6 +4,15 @@
 
 This CLI application will allow you to view and manage the departments, roles, and employees in your company.
 
+Description Video Link:
+
+
+
+
+Images:
+
+
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -20,10 +29,12 @@ Clone the files from:
 
 https://1hoppy1.github.io/Employee-Tracker/
 
+In the database.js file you will need to enter your sqlpasword where it says SQLPASSWORD.
+
 On your command line type: 
 npm install
 Then type:
-npm start or node server.js
+node index.js
 
 ## Usage 
 
@@ -39,7 +50,7 @@ Send me Comments.
 
 ## Tests
 
-Use a tester
+None
 
 ## Questions
 
@@ -49,4 +60,4 @@ jim@gmail.com
 
 ## Credits
 
-my mom
+my Wife and Mom
